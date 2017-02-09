@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://4.antsbigdata.sinaapp.com/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  
+  <title>Speech-Phone</title>
+  <link rel="stylesheet" type="text/css" href="./Speech-Phone_files/main.css">
+</head>
+<body>
+<div class="content">
+  <div class="title">
+    <h2>Speech-Phone</h2>
+    <span>Start</span>
+      <span class="red">talking</span>
+    <span>and see results</span>
+  </div>
+  <div class="app-button">
+    <a href="http://4.antsbigdata.sinaapp.com/index.html" class="android-app" onclick="isWeiXin();">Download</a>
+    <div class="get-android"></div>
+  </div>
+  <div class="phone" id="phone">
+      <img src="./Speech-Phone_files/iPhone6Black.png">
+    <div class="wrap">
+      <div class="carousel">
+          <li><img src="./Speech-Phone_files/inner.png"></li>
+          <li><img src="./Speech-Phone_files/inner1.png"></li>
+          <li><img src="./Speech-Phone_files/inner2.png"></li>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    /*if(window.screen.width <= 1080)
+        document.getElementById('phone').style.cssText = "margin-right: 29%;margin-top: 50%;";
+    window.onload = function(){ 
+		if(isWeiXin()){
+            alert("微信屏蔽文件下载，请用其他浏览器打开哦~");
+        }*/
+    function isWeiXin(){ 
+    	var ua = window.navigator.userAgent.toLowerCase(); 
+    	if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
+        	alert("微信屏蔽文件下载，请用其他浏览器打开哦~");
+    	}else{ 
+        	var download = confirm("开始下载哦");
+            if(download)
+        		window.open("http://antsbigdata-speechphone.stor.sinaapp.com/MainActivity.apk");
+            else
+                return false;
+    	}
+    }
+</script>
+
+
+</body></html>

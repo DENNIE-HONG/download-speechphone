@@ -1,0 +1,205 @@
+html{height: 100%;}
+body{
+  /*background: #1B9AF7;*/
+  background: url(img/bg.jpg) center center no-repeat fixed;
+  min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.content
+  .title{
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 508px;
+    color: #fff;
+  }
+  .app-button{
+    position: absolute;
+    top: 340px;
+    left: 100px;
+    display: inline-block;
+  }
+    .android-app{
+      width: 230px;
+      height: 65px;
+      /*background: url(itunes-app-store-logo.png) center center no-repeat;*/
+      background-size: contain;
+      display: block;
+      box-shadow: 0 7px 0 #980823, 0 8px 3px rgba(0, 0, 0, 0.3);
+      background-color: #ff2d55;
+      border-color: #ff2d55;
+      border-radius: 5%;
+      font-weight: 300;
+      font-size: 25px;
+      font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      text-decoration: none;
+      text-align: center;
+      line-height: 65px;
+      /*height: 40px;*/
+      padding: 0 40px;
+      box-sizing: border-box;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: .3s;
+      transition-duration: .3s;
+      color: #fff;
+    }
+    .android-app:after{
+        content: '';
+        display: block;
+        position: absolute;
+        right: -60px;
+        top: -10px;
+        width: 55px;
+        height: 51px;
+        background: url(img/bubble-free.svg) center center no-repeat;
+}
+    .get-android{
+      display: inline-block;
+      left: 16px;
+      bottom: 48px;
+      width: 27px;
+      height: 31px;
+      background: transparent url(img/android.svg) no-repeat top center;
+      position: relative;
+      cursor: pointer;
+    }
+
+
+.content
+  .title
+    h2{ font-size: 45px;color: #ff2d55;}
+    span{
+      font-size: 65px; 
+      font-weight: 500; 
+    }
+    .red{color: #A5DE37;margin-left: 18px;}
+  .phone{
+    position: relative;
+    float: right;
+    margin-right: 145px;
+  }
+    .wrap{
+      position: absolute;
+      right: 36px;
+      top: 95px;
+      width: 288px;
+      height: 509px;
+      overflow: hidden;
+    }
+      .carousel{
+        width: 300%;
+        text-align: center;
+        transition: all 0.5s ease-in 0s;
+        -webkit-animation: slide1 7s ease-out infinite;
+    	-moz-animation: slide1 7s ease-out infinite;
+        -ms-animation: slide1 7s ease-out infinite;
+      }
+        li{
+          float: left;
+          width: 288px;
+          height: 100%;
+    	  list-style-type: none;
+        }
+/*创建三种动画策略*/
+@-webkit-keyframes slide1 {
+  0% { margin-left:0;}
+  23% { margin-left:0;}
+  33% { margin-left:-288px;}
+  56% { margin-left:-288px;}
+  66% { margin-left:-576px;}
+  90% { margin-left:-576px;}
+  100% {margin-left:0;}
+}
+@-moz-keyframes slide1 {
+  0% { margin-left:0;}
+  23% { margin-left:0;}
+  33% { margin-left:-288px;}
+  56% { margin-left:-288px;}
+  66% { margin-left:-576px;}
+  90% { margin-left:-576px;}
+  100% {margin-left:0;}
+}
+@-ms-keyframes slide1 {
+  0% { margin-left:0;}
+  23% { margin-left:0;}
+  33% { margin-left:-288px;}
+  56% { margin-left:-288px;}
+  66% { margin-left:-576px;}
+  90% { margin-left:-576px;}
+  100% {margin-left:0;}
+}
+@media screen and (max-width: 1080px) {
+  .content
+    .title{
+      width: 85%;
+      top: .5rem;
+      left: 2rem;
+      color: #fff;
+      text-align: center;
+    }
+  .content
+  .title
+    h2{ font-size: 2.3rem;margin: 1rem 0;}
+    span{
+      font-size: 1.5rem;  
+    }
+    .red{ margin-left: 0.1rem;}
+  .phone{ 
+    margin-right: 26%;
+    margin-top: 8rem;
+    width: 180px;
+  }
+  .phone img{
+      width: 100%;
+    }
+    .wrap{
+      right: 1.1rem;
+      top: 3rem;
+      width: 144px;
+      height: 256px;
+      overflow: hidden;
+    }
+        li{
+          width: 144px;
+        }
+    .wrap img{width: 101%;}
+  .app-button{
+    top: 31rem;
+    left: 16%;
+  }
+
+
+@-webkit-keyframes slide1 {
+  0% { margin-left:0;}
+  23% { margin-left:0;}
+  33% { margin-left:-142px;}
+  56% { margin-left:-142px;}
+  66% { margin-left:-284px;}
+  90% { margin-left:-284px;}
+  100% {margin-left:0;}
+}
+@-moz-keyframes slide1 {
+  0% { margin-left:0;}
+  23% { margin-left:0;}
+  33% { margin-left:-142px;}
+  56% { margin-left:-142px;}
+  66% { margin-left:-284px;}
+  90% { margin-left:-284px;}
+  100% {margin-left:0;}
+}
+@-ms-keyframes slide1 {
+  0% { margin-left:0;}
+  23% { margin-left:0;}
+  33% { margin-left:-142px;}
+  56% { margin-left:-143px;}
+  66% { margin-left:-284px;}
+  90% { margin-left:-184px;}
+  100% {margin-left:0;}
+}
+}
+
+
